@@ -1,7 +1,7 @@
 {
   "semi": true,
   "printWidth": 100,
-  "jsxBracketSameLine": false,
+  "bracketSameLine": false,
   "bracketSpacing": false,
   "eslintIntegration": true,
   "jsxSingleQuote": true,

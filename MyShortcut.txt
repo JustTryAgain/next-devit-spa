@@ -1,0 +1,3 @@
+ctl+d //duplicate the line
+ctl+shift+k //delete line
+ctl+/ //fast comment section
