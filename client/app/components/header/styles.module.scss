@@ -1,3 +1,59 @@
-.header {
-  max-width: 1252px;
+@import "../../constants/vars";
+
+.header-container {
+  margin-top: 58px;
+
+  .header {
+    max-width: 1200px;
+    font-family: Montserrat, sans-serif;
+    margin: 0 auto;
+
+    &__logo-wrapper {
+      max-width: 312px;
+      max-height: 35px;
+    }
+
+  }
+}
+
+.navigation {
+
+  &__list {
+
+  }
+
+  &__item {
+    text-align: end;
+  }
+
+  &__link {
+    color: white;
+    text-decoration: none;
+    font-family: Montserrat, sans-serif;
+    font-size: $fz;
+    &:hover {
+      color: $yc;
+    }
+  }
+}
+
+.activator {
+  position: relative;
+  border-bottom: 1px dashed #E3AF11;
+}
+
+.arrow {
+  &:after {
+    position: absolute;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-right-style: solid;
+    border-right-width: 2px;
+    content: '';
+    height: 8px;
+    width: 8px;
+    border-color: $yc;
+    transform: rotate(315deg);
+  }
+
 }

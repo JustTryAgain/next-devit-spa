@@ -1,0 +1,25 @@
+{
+  "help": {
+    "header": "We help clients take their online business to the next level",
+    "icon": "../../public/",
+    "footer": {
+      "info": {
+        "header": "Great applications with striking features",
+        "subheader": "Solving customers' everyday challenges and help them grow their business"
+      },
+      "icon": {}
+    }
+  },
+  "solutions": {
+    "header": "300+",
+    "subheader": "5 star reviews on Shopify",
+    "icon": "../../public/",
+    "footer": {
+      "info": {
+        "header": "Great applications with striking features",
+        "subheader": "Solving customers' everyday challenges and help them grow their business"
+      },
+      "icon": {}
+    }
+  }
+}

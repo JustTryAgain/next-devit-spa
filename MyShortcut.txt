@@ -1,3 +1,4 @@
 ctl+d //duplicate the line
 ctl+shift+k //delete line
 ctl+/ //fast comment section
+https://www.figma.com/file/KhvlOvnZIooQWcaQPYp2QO/Public-version-(Copy)?node-id=0%3A1

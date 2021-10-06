@@ -1,9 +1,10 @@
 @import '../fonts/fonts.scss';
-
-ul,
-ol {
+@import "~bootstrap/scss/bootstrap";
+//todo: optimize css & bootstrap
+ul, ol {
   list-style: none;
 }
+
 body {
   background: #232746;
 }

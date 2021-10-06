@@ -1,8 +1,8 @@
-import 'normalize.css';
 import '../styles/index.scss';
 
+//todo: dif locales
 // eslint-disable-next-line react/prop-types
-function MyApp({Component, pageProps}) {
+function MyApp({ Component, pageProps }) {
   // eslint-disable-next-line react/jsx-props-no-spreading
   return <Component {...pageProps} />;
 }

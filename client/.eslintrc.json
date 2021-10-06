@@ -12,8 +12,7 @@
     "plugin:react/recommended",
     "plugin:import/errors",
     "plugin:import/warnings",
-    "plugin:jsx-a11y/recommended",
-    "prettier"
+    "plugin:jsx-a11y/recommended"
   ],
   "globals": {
     "Atomics": "readonly",
@@ -32,17 +31,10 @@
       "version": "detect"
     }
   },
-  "plugins": ["react", "react-hooks", "jsx-a11y", "import", "prettier"],
+  "plugins": ["react", "react-hooks", "jsx-a11y", "import"],
   "rules": {
     "react/react-in-jsx-scope": "off",
     "react/jsx-filename-extension": [1, {"extensions": [".js", ".jsx"]}],
-    "jsx-a11y/anchor-is-valid": [
-      "error",
-      {
-        "components": ["Link"],
-        "specialLink": ["to"]
-      }
-    ]
-  },
-  "prettier/prettier": "error"
+    "jsx-a11y/anchor-is-valid": 1
+  }
 }
