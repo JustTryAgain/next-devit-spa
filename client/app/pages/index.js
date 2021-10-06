@@ -1,15 +1,15 @@
+import Head from 'next/head';
+import Header from '../components/header';
+
 export default function Home() {
   return (
-    <div>
-      <h1>EA</h1>
-      <ul>
-        <li>dfg</li>
-        <li>dfs</li>
-        <li>dfs</li>
-        <li>dfs</li>
-        <li>dfs</li>
-        <li>dfs</li>
-      </ul>
-    </div>
+    <>
+      <Head>
+        <meta httpEquiv='X-UA-Compatible' content='IE=edge' />
+        <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+        <title>Next Landing</title>
+      </Head>
+      <Header />
+    </>
   );
 }
