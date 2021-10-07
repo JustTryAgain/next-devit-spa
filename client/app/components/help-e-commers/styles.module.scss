@@ -1,14 +1,114 @@
-.sec{
-  position: absolute;
-  top: 200px;
-  max-width: 500px;
-  max-height: 500px;
-  margin-left: 90px;
-  color: white;
-  font-family: Montserrat, sans-serif;
-  font-size: 20px;
+@import "../../constants/vars";
+
+.ecommerce {
+  max-width: $maxWidth;
+  max-height: 580px;
+  color: $wc;
+  margin: 120px auto;
+  position: relative;
+
+
+  &__text {
+    font-family: $FR;
+    max-width: 600px;
+
+    &-promotion {
+      max-width: 100%;
+      margin-bottom: $margin;
+      z-index: 3;
+
+      .txt__h {
+        font-weight: 400;
+        font-size: $fzH;
+      }
+
+      .txt__p {
+        font-weight: 300;
+        font-size: $fzP;
+      }
+    }
+  }
+
+  &__logos {
+    max-width: 565px;
+    z-index: -1;
+  }
+
+  &__shapes {
+    position: absolute;
+    z-index: -10;
+    top: -63px;
+    left: 330px;
+
+    .shape-left {
+      z-index: 1;
+      position: absolute;
+      left: 590px;
+      top: 120px;
+      width: 75px;
+      height: 90px;
+      background: rgba(46, 52, 86, 0.85);
+      border-radius: 10px;
+    }
+
+    .shape-left-small {
+      position: absolute;
+      left: 545px;
+      top: 30px;
+      width: 50px;
+      height: 60px;
+      background: rgba(46, 52, 86, 0.85);
+      border-radius: 10px;
+    }
+
+    .shape-right {
+      position: absolute;
+      left: 130px;
+      top: 480px;
+      z-index: 1;
+      background: rgba(46, 52, 86, 0.85);
+      border-radius: 10px;
+      width: 75px;
+      height: 95px;
+    }
+
+    .shape-right-small {
+      position: absolute;
+      left: 180px;
+      top: 370px;
+      z-index: 1;
+      width: 50px;
+      height: 60px;
+      background: rgba(46, 52, 86, 0.85);
+      border-radius: 10px;
+    }
+
+    .shape-main {
+      position: absolute;
+      width: 660px;
+      height: 550px;
+      background: linear-gradient(180deg, rgba(44, 53, 86, 0.8) 0%, rgba(36, 34, 69, 0.8) 100%);
+      border-radius: 15px;
+    }
+  }
+
+  .links {
+    font-family: $FM;
+    font-size: $fzP;
+  }
 }
 
-.imgS{
+@media (max-width: 991px) {
+  .ecommerce {
+    &__shapes {
+      left: 180px;
+      top: -40px;
+    }
 
+    &__text {
+      &-promotion {
+        margin-bottom: 40px;
+      }
+    }
+  }
 }

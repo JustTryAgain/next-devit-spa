@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Header from '../components/header';
-import HelpEcomm from "../components/help-e-commers";
+import HelpEcommerce from "../components/help-e-commers";
+import Featured from "../components/featured";
 
 export default function Home() {
   return (
@@ -11,7 +12,8 @@ export default function Home() {
         <title>Next Landing</title>
       </Head>
       <Header />
-      <HelpEcomm/>
+      <HelpEcommerce/>
+      <Featured/>
     </>
   );
 }

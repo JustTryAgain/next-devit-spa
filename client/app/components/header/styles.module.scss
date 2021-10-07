@@ -1,26 +1,27 @@
 @import "../../constants/vars";
 
-.header-container {
-  margin-top: 58px;
+.header {
+  margin: $margin 0 0 0;
 
-  .header {
-    max-width: 1200px;
+  &-container {
+    margin: 0 auto 0 auto;
+    max-width: $maxWidth;
     font-family: $FM;
-    margin: 0 auto;
     justify-content: space-between;
+  }
 
-    &__logo-wrapper {
-      max-width: 312px;
-      max-height: 35px;
-    }
-
+  &__logo-wrapper {
+    max-width: 312px;
+    max-height: 35px;
+    padding: 0;
+    margin: 0;
   }
 }
 
 .navigation {
 
   &__list {
-    margin: 0;
+    margin: 0 auto 0 auto;
   }
 
   &__item {
@@ -29,16 +30,17 @@
 
   &__link {
     padding: 7px;
-    color: white;
+    color: $wc;
     text-decoration: none;
     font-family: $FM;
     font-size: $fz;
+
     &:hover {
       color: $yc;
     }
   }
 
-  &__get-btn{
+  &__get-btn {
     border: 2px solid #FFC20A;
     border-radius: 5px;
   }
@@ -51,7 +53,8 @@
 }
 
 .arrow {
-position: relative;
+  position: relative;
+
   &:after {
     right: 0;
     margin: 12px 0 0 5px;
@@ -66,5 +69,23 @@ position: relative;
     border-color: $yc;
     transform: rotate(315deg);
   }
+}
 
+@media screen and (max-width: 991px) {
+  .header {
+    margin-top: 30px;
+
+    &-container {
+      justify-content: center;
+    }
+
+    &__logo-wrapper {
+      margin-bottom: 10px;
+    }
+  }
+  .navigation {
+    &__item {
+      text-align: center;
+    }
+  }
 }
