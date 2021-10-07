@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Header from '../components/header';
+import HelpEcomm from "../components/help-e-commers";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
         <title>Next Landing</title>
       </Head>
       <Header />
+      <HelpEcomm/>
     </>
   );
 }

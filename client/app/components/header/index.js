@@ -5,21 +5,22 @@ import Nav from './navigation';
 import Col from 'react-bootstrap/Col'
 import Row from 'react-bootstrap/Row'
 import cn from "classnames";
+import Container from "react-bootstrap/Container";
 
 export default function Header() {
   const classHeader = cn(
     styles.header
   );
   return (
-    <div className={styles["header-container"]}>
-      <Row as='header' className={classHeader + ' ' + 'justify-content-between'}>
-        <Col xs={12} className={styles['header__logo-wrapper']}>
+    <Container className={styles["header-container"]}>
+      <Row as='header' className={classHeader}>
+        <Col xl={4}  className={styles['header__logo-wrapper']}>
           <Image src={logo} alt="logo" />
         </Col>
-        <Col>
+        <Col xl={8}>
           <Nav />
         </Col>
       </Row>
-    </div>
+    </Container>
   );
 }

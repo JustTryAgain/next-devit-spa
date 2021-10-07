@@ -5,8 +5,9 @@
 
   .header {
     max-width: 1200px;
-    font-family: Montserrat, sans-serif;
+    font-family: $FM;
     margin: 0 auto;
+    justify-content: space-between;
 
     &__logo-wrapper {
       max-width: 312px;
@@ -19,7 +20,7 @@
 .navigation {
 
   &__list {
-
+    margin: 0;
   }
 
   &__item {
@@ -27,23 +28,33 @@
   }
 
   &__link {
+    padding: 7px;
     color: white;
     text-decoration: none;
-    font-family: Montserrat, sans-serif;
+    font-family: $FM;
     font-size: $fz;
     &:hover {
       color: $yc;
     }
+  }
+
+  &__get-btn{
+    border: 2px solid #FFC20A;
+    border-radius: 5px;
   }
 }
 
 .activator {
   position: relative;
   border-bottom: 1px dashed #E3AF11;
+  padding-right: 15px;
 }
 
 .arrow {
+position: relative;
   &:after {
+    right: 0;
+    margin: 12px 0 0 5px;
     position: absolute;
     border-bottom-style: solid;
     border-bottom-width: 2px;
