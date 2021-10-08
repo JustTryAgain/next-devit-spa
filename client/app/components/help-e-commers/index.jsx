@@ -1,47 +1,44 @@
 import styles from './styles.module.scss';
-import Image from 'next/image';
-import ecommerceLogos from '../../public/images/ecommers/Logo e-commers.png';
 import Link from "../links";
 import CallIcon from "../../public/images/icon call.svg";
 import ClickIcon from "../../public/images/icon click.svg";
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
+import Container from "react-bootstrap/Container";
+import Image from 'next/image';
+import Logos from '../../public/images/ecommers/Logo e-commers.png';
 
 const HelpEcommerce = () => {
   return (
-    <Row as={'section'} className={styles.ecommerce}>
-      <Col className={styles.ecommerce__text}>
+    <section className={styles['ecommerce']}>
+      <Container className={styles['ecommerce__container']}>
         <Row>
-          <Col xl={12} lg={11} className={styles["ecommerce__text-promotion"]}>
-            <h2 className={styles.txt__h}>We help e-commerce owners run Shopify their business easier</h2>
-            <p className={styles.txt__p}>
-              There is a reason many Shopify sellers have given us a 5-star rating
-              on the Shopify App Store. Because we help online store owners sell more on Shopify.
-            </p>
+          <Col lg={6} className={styles['ecommerce__text']}>
+            <div className={styles['ecommerce__text-left']}>
+              <h2 className={styles.txt__h}>We help e-commerce owners run Shopify their business easier</h2>
+              <p className={styles.txt__p}>
+                There is a reason many Shopify sellers have given us a 5-star rating on the Shopify App Store.
+                Because we help online store owners sell more on Shopify.
+              </p>
+              <div className={styles.links}>
+                <Link link={'#'} svg={ClickIcon} text={'Go to App'}/>
+                <Link link={'#'} svg={CallIcon} text={'Book a call'}/>
+              </div>
+            </div>
           </Col>
-          <div className={styles.links}>
-            <Row>
-            <Col xl={5} lg={5} md={12}>
-              <Link link={'#'} svg={ClickIcon} text={'Go to App'} />
-            </Col>
-            <Col xl={6} lg={7} md={12}>
-              <Link link={'#'} svg={CallIcon} text={'Book a call'} />
-            </Col>
-            </Row>
-          </div>
+          <Col lg={6} className={styles.ecommerce__bgImage}>
+            <Image src={Logos} alt={'logo`s'} quality={85} placeholder={"blur"}/>
+          </Col>
         </Row>
-      </Col>
-      <Col className={styles.ecommerce__logos}>
-        <Image src={ecommerceLogos} alt='logo-icons' quality={95} placeholder={`blur`} />
-      </Col>
+      </Container>
       <div className={styles.ecommerce__shapes}>
-        <div className={styles['shape-left']} />
-        <div className={styles['shape-left-small']} />
-        <div className={styles['shape-right']} />
-        <div className={styles['shape-right-small']} />
-        <div className={styles['shape-main']} />
+        <div className={styles['shape-left']}/>
+        <div className={styles['shape-left-small']}/>
+        <div className={styles['shape-right']}/>
+        <div className={styles['shape-right-small']}/>
+        <div className={styles['shape-main']}/>
       </div>
-    </Row>
+    </section>
   );
 }
 

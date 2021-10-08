@@ -1,43 +1,46 @@
 @import "../../constants/vars";
 
-.ecommerce {
-  max-width: $maxWidth;
-  max-height: 580px;
+.ecommerce{
   color: $wc;
-  margin: 120px auto;
   position: relative;
+  max-height: 578px;
 
-
-  &__text {
-    font-family: $FR;
-    max-width: 600px;
-
-    &-promotion {
-      max-width: 100%;
-      margin-bottom: $margin;
-      z-index: 3;
-
-      .txt__h {
-        font-weight: 400;
-        font-size: $fzH;
-      }
-
-      .txt__p {
-        font-weight: 300;
-        font-size: $fzP;
-      }
+  &__container{
+    max-width: $maxWidth;
+  }
+  &__text{
+    position: relative;
+    .ecommerce__bgImage{
+      position: absolute;
+      left: 600px;
+      top: 0;
     }
   }
+  &__text-left{
+    font-family: $FR;
 
-  &__logos {
-    max-width: 565px;
-    z-index: -1;
+    .txt__h {
+      margin: 0;
+      font-weight: 400;
+      font-size: $fzH;
+      padding-bottom: 40px;
+    }
+
+    .txt__p {
+      margin: 0;
+      font-weight: 300;
+      font-size: $fzP;
+    }
+
+    .links{
+
+    }
   }
 
   &__shapes {
     position: absolute;
     z-index: -10;
-    top: -63px;
+    top: 0;
     left: 330px;
 
     .shape-left {
@@ -89,26 +92,6 @@
       height: 550px;
       background: linear-gradient(180deg, rgba(44, 53, 86, 0.8) 0%, rgba(36, 34, 69, 0.8) 100%);
       border-radius: 15px;
-    }
-  }
-
-  .links {
-    font-family: $FM;
-    font-size: $fzP;
-  }
-}
-
-@media (max-width: 991px) {
-  .ecommerce {
-    &__shapes {
-      left: 180px;
-      top: -40px;
-    }
-
-    &__text {
-      &-promotion {
-        margin-bottom: 40px;
-      }
     }
   }
 }

@@ -8,3 +8,229 @@ Medium	md	≥768px
 Large	lg	≥992px
 Extra large	xl	≥1200px
 Extra extra large	xxl	≥1400px
+
+
+
+.ecommerce {
+  min-height: 700px;
+  background-image: url("../../public/images/ecommers/Component 1.png");
+  background-repeat: no-repeat;
+
+  &__container {
+    max-width: 1200px;
+    .inner__left{
+      color: $wc;
+
+      .ecommerce__text {
+        font-family: $FR;
+        max-width: 600px;
+
+        &-promotion {
+          max-width: 100%;
+
+          z-index: 3;
+
+          .txt__h {
+            font-weight: 400;
+            font-size: $fzH;
+          }
+
+          .txt__p {
+            font-weight: 300;
+            font-size: $fzP;
+          }
+        }
+      }
+    }
+
+    .inner__right{
+
+    }
+
+
+
+    &__logos {
+      max-width: 565px;
+      z-index: -1;
+    }
+
+    &__shapes {
+      position: absolute;
+      z-index: -10;
+      top: -63px;
+      left: 330px;
+
+      .shape-left {
+        z-index: 1;
+        position: absolute;
+        left: 590px;
+        top: 120px;
+        width: 75px;
+        height: 90px;
+        background: rgba(46, 52, 86, 0.85);
+        border-radius: 10px;
+      }
+
+      .shape-left-small {
+        position: absolute;
+        left: 545px;
+        top: 30px;
+        width: 50px;
+        height: 60px;
+        background: rgba(46, 52, 86, 0.85);
+        border-radius: 10px;
+      }
+
+      .shape-right {
+        position: absolute;
+        left: 130px;
+        top: 480px;
+        z-index: 1;
+        background: rgba(46, 52, 86, 0.85);
+        border-radius: 10px;
+        width: 75px;
+        height: 95px;
+      }
+
+      .shape-right-small {
+        position: absolute;
+        left: 180px;
+        top: 370px;
+        z-index: 1;
+        width: 50px;
+        height: 60px;
+        background: rgba(46, 52, 86, 0.85);
+        border-radius: 10px;
+      }
+
+      .shape-main {
+        position: absolute;
+        width: 660px;
+        height: 550px;
+        background: linear-gradient(180deg, rgba(44, 53, 86, 0.8) 0%, rgba(36, 34, 69, 0.8) 100%);
+        border-radius: 15px;
+      }
+    }
+
+    .links {
+      font-family: $FM;
+      font-size: $fzP;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .ecommerce {
+    &__shapes {
+      left: 180px;
+      top: -40px;
+    }
+
+    &__text {
+      &-promotion {
+        margin-bottom: 40px;
+      }
+    }
+  }
+}
+
+
+
+////
+
+.header {
+  margin: $margin 0 0 0;
+
+  &-container {
+    margin: 0 auto 0 auto;
+    max-width: $maxWidth;
+    font-family: $FM;
+    justify-content: space-between;
+  }
+
+  &__logo-wrapper {
+    max-width: 312px;
+    max-height: 35px;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.navigation {
+
+  &__list {
+    margin: 0 auto 0 auto;
+  }
+
+  &__item {
+    text-align: end;
+  }
+
+  &__link {
+    padding: 7px;
+    color: $wc;
+    text-decoration: none;
+    font-family: $FM;
+    font-size: $fz;
+
+    &:hover {
+      color: $yc;
+    }
+  }
+
+  &__get-btn {
+    border: 2px solid #FFC20A;
+    border-radius: 5px;
+  }
+}
+
+.activator {
+  position: relative;
+  border-bottom: 1px dashed #E3AF11;
+  padding-right: 15px;
+}
+
+.arrow {
+  position: relative;
+
+  &:after {
+    right: 0;
+    margin: 12px 0 0 5px;
+    position: absolute;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-right-style: solid;
+    border-right-width: 2px;
+    content: '';
+    height: 8px;
+    width: 8px;
+    border-color: $yc;
+    transform: rotate(315deg);
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .header {
+    margin-top: 30px;
+
+    &-container {
+      justify-content: center;
+    }
+
+    &__logo-wrapper {
+      margin-bottom: 10px;
+    }
+  }
+  .navigation {
+    &__item {
+      text-align: center;
+    }
+  }
+}
+
+/////
+{/*<Col lg={6} className={styles.ecommerce__logos}>
+            <div className={styles.inner_right}>
+            <Image src={ecommerceLogos} alt='logo-icons' quality={95} placeholder={`blur`}/>
+            </div>
+          </Col>*/}
