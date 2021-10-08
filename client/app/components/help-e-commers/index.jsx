@@ -6,14 +6,14 @@ import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import Container from "react-bootstrap/Container";
 import Image from 'next/image';
-import Logos from '../../public/images/ecommers/Logo e-commers.png';
+import Logos from '../../public/images/ecommers/Logos e-commerce.png';
 
 const HelpEcommerce = () => {
   return (
     <section className={styles['ecommerce']}>
       <Container className={styles['ecommerce__container']}>
         <Row>
-          <Col lg={6} className={styles['ecommerce__text']}>
+          <Col lg={7} className={styles['ecommerce__text']}>
             <div className={styles['ecommerce__text-left']}>
               <h2 className={styles.txt__h}>We help e-commerce owners run Shopify their business easier</h2>
               <p className={styles.txt__p}>
@@ -26,18 +26,11 @@ const HelpEcommerce = () => {
               </div>
             </div>
           </Col>
-          <Col lg={6} className={styles.ecommerce__bgImage}>
+          <div className={styles.ecommerce__bgImage}>
             <Image src={Logos} alt={'logo`s'} quality={85} placeholder={"blur"}/>
-          </Col>
+          </div>
         </Row>
       </Container>
-      <div className={styles.ecommerce__shapes}>
-        <div className={styles['shape-left']}/>
-        <div className={styles['shape-left-small']}/>
-        <div className={styles['shape-right']}/>
-        <div className={styles['shape-right-small']}/>
-        <div className={styles['shape-main']}/>
-      </div>
     </section>
   );
 }

@@ -1,0 +1,22 @@
+@import "../../constants/vars";
+
+.featured {
+  max-width: $maxWidth;
+  padding: 100px 15px 0;
+
+  &__text {
+    color: $yc;
+    font-family: $FM;
+    font-weight: 600;
+    font-size: $fzP;
+    justify-content: center;
+    margin: 0;
+    padding-bottom: 36px;
+  }
+
+  &__logos{
+    align-items: center;
+
+    text-align: center;
+  }
+}

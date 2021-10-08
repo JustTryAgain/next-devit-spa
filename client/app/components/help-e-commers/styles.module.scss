@@ -2,38 +2,49 @@
 
 .ecommerce{
   color: $wc;
-  position: relative;
-  max-height: 578px;
-
+  padding-bottom: 0;
   &__container{
     max-width: $maxWidth;
-  }
-  &__text{
     position: relative;
-    .ecommerce__bgImage{
-      position: absolute;
-      left: 600px;
-      top: 0;
-    }
+    padding-right: 45px;
+    padding-top: 63px;
+    padding-left: 15px;
   }
+
+  &__bgImage{
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+    max-width: 877px;
+  }
+
   &__text-left{
     font-family: $FR;
 
     .txt__h {
+      padding-right: 100px;
       margin: 0;
       font-weight: 400;
       font-size: $fzH;
-      padding-bottom: 40px;
+      padding-bottom: 15px;
     }
 
     .txt__p {
       margin: 0;
       font-weight: 300;
       font-size: $fzP;
+      padding-bottom: $PadBig;
+      letter-spacing: 0.1em;
     }
 
     .links{
+      display: flex;
+      padding-bottom: 0;
 
+      :not(:last-child){
+        margin-right: 30px;
+      }
     }
   }
 

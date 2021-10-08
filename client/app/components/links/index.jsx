@@ -6,8 +6,8 @@ const Link = ({ text, svg, link }) => {
     <div className={styles.linkWrapper}>
       <a href={link} className={styles.link}>
         {text}
+        <Image src={svg} alt={text} width={'30px'} height={'35px'}/>
       </a>
-      <Image src={svg} alt={text} width={'30px'} height={'35px'}/>
     </div>
   );
 }
