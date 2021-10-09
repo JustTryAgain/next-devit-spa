@@ -4,13 +4,14 @@ import Row from "react-bootstrap/Row";
 import styles from './styles.module.scss';
 import Image from 'next/image';
 import MobileUp from '../../../public/images/info/mobile-up.png';
+import cn from "classnames";
 
 const FirstScreen = () => {
+    const LeftBlockClasses = cn(styles['left-block'], 'd-flex', 'flex-column' , 'justify-content-between');
     return (
         <Container className={styles['first-screen']}>
             <Row className={'justify-content-between'}>
-                <Col lg={6} className={styles['left-block']}>
-                    <span className={styles['left-block__bg']} />
+                <Col lg={6} className={LeftBlockClasses}>
                     <Row className={styles['left-h']}>
                         <Col lg={10} className={styles['left-h']} as={'h3'}>
                             We help clients take their online business to the next level
@@ -29,9 +30,8 @@ const FirstScreen = () => {
                         </Col>
                     </Row>
                 </Col>
-                <Col lg={5} className={styles['right-block']}>
-                    <Image src={MobileUp}  alt={'Up your business!'} placeholder={'blur'}/>
-                    <span className={styles['right-block__bg']} />
+                <Col lg={6} className={styles['right-block']}>
+                    <Image src={MobileUp} alt={'Up your business!'} placeholder={'blur'}/>
                 </Col>
             </Row>
         </Container>

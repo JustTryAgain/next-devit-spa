@@ -1,15 +1,16 @@
-import styles from './styles.module.scss';
-import FirstScreen from "./screens/firstScreen";
+import FirstScreen from './screens/firstScreen';
+import SecondScreen from './screens/secondScreen';
+import ThirdScreen from './screens/thirdScreen';
 
 
 const Info = () => {
-    return (
-        <section>
-            <div className={styles['container']}>
-                <FirstScreen/>
-            </div>
-        </section>
-    );
-}
+  return (
+    <section>
+        <FirstScreen/>
+        <SecondScreen/>
+        <ThirdScreen/>
+    </section>
+  );
+};
 
 export default Info;

@@ -3,7 +3,7 @@
 //first screen
 .first-screen {
   max-width: 1400px;
-  padding: $PadBig 0 30px;
+  padding: $PadBig 0 0;
 
   * {
     margin: 0;
@@ -12,18 +12,11 @@
   .left-block {
     color: $wc;
     font-family: $FR;
-    position: relative;
+    padding: 0;
 
-    &__bg {
-      background: rgba(45, 49, 84, 0.2);
-      position: absolute;
-      width: 80%;
-      height: 50%;
-      top: 50%;
-    }
 
     .left-h {
-      padding: 40px 0;
+      padding: 40px 20px 0;
       font-weight: 400;
       font-size: $fzH2;
       justify-content: center;
@@ -31,12 +24,12 @@
     }
 
     .sub-h {
-      padding-bottom: 30px;
-
       &__expertise {
+        padding: 15% 0;
         display: flex;
         flex-direction: column;
         align-items: center;
+        background: rgba(45, 49, 84, 0.2);
 
         .count {
           color: $yc;
@@ -54,9 +47,15 @@
       }
 
       &__promotion {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        background: rgba(45, 49, 84, 0.3);
+
         .sub-header {
           font-weight: 700;
           letter-spacing: 0.1em;
+          padding-bottom: 20px;
         }
 
         .sub-paragraph {
@@ -70,35 +69,156 @@
 
   .right-block {
     display: flex;
-    max-width: 35%;
     align-items: center;
     position: relative;
     padding: 0 20px 0 0;
-    z-index: 1;
-
-    &__bg {
-      position: absolute;
-      top: 0;
-      left: -25%;
-      z-index: -1;
-      background: rgba(45, 49, 84, 0.4);
-      width: calc(100% + 25%);
-      height: calc(100%);
-    }
+    background: rgba(45, 49, 84, 0.4);
   }
 }
 
-@media (max-width: 1350px) {
-  .first-screen {
-    .left-block {
-      &__bg {
-        width: 80%;
-        height: 40%;
-        top: 60%;
+///second screen//////////////////////////////////////////////////////////////////////////////////////////
+.second-screen {
+  max-width: 1400px;
+  padding-bottom: 0;
+
+  .left-block {
+    padding: 60px 25px 0 0;
+    background: rgba(45, 49, 84, 0.4);
+    display: flex;
+  }
+
+  .right-block {
+    color: $wc;
+    font-family: $FR;
+    letter-spacing: 0.1em;
+    padding-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &__reviews {
+      font-weight: 700;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 50px 0;
+
+      .reviews__count {
+        color: $yc;
+        font-family: $FM;
+        font-size: $fzNums;
+      }
+
+      .reviews__count-text {
+        font-size: $fzP;
+        text-align: center;
+        padding: 0 30%;
+      }
+    }
+
+    &__solutions {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background: rgba(45, 49, 84, 0.3);
+
+      .solutions__h {
+        font-weight: 700;
+        letter-spacing: 0.1em;
+        margin: 0;
+        padding: 0 0 25px 0;
+      }
+
+      .solutions__p {
+        letter-spacing: 0.1em;
+        font-weight: 300;
+        font-size: $fzP;
+        margin: 0;
+        padding: 0;
+      }
+    }
+
+    &__rocket {
+      background: rgba(45, 49, 84, 0.2);
+      padding: 30px 0 30px 30px;
+
+      .image-wrapper {
+        max-width: 180px;
+        margin: 0 auto;
       }
     }
   }
 }
 
+//third screen/////////////////////////////////////////////////////////////////////////////
+.third-screen {
+  max-width: 1400px;
 
-///second screen//////////////////////////////////////////////////////////////////////////////////////////
+  *{
+    margin: 0;
+    padding: 0;
+  }
+
+  &__left-block {
+    padding: 40px 0 0;
+    color: $wc;
+    font-family: $FR;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .nums {
+      color: $yc;
+      font-family: $FM;
+      font-size: $fzNums;
+      letter-spacing: 0.1em;
+    }
+
+    .active-merchants {
+      padding-bottom: 30px;
+      align-items: center;
+      font-size: $fzP;
+      letter-spacing: 0.1em;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .countries {
+      padding: 20px 0 0 20px;
+      align-items: center;
+      background: rgba(45, 49, 84, 0.2);
+      display: flex;
+      flex-direction: column;
+      font-size: $fzP;
+      letter-spacing: 0.1em;
+      justify-content: center;
+    }
+
+    .promotion {
+      padding: 20px 0 0 20px;
+      background: rgba(45, 49, 84, 0.3);
+      &__h {
+        font-weight: 700;
+        letter-spacing: 0.1em;
+        padding: 10px 10px 10px 0;
+      }
+
+      &__p {
+        padding: 10px 10px 10px 0;
+        letter-spacing: 0.1em;
+        font-weight: 300;
+        font-size: $fzP;
+      }
+    }
+  }
+
+  &__right-block {
+    background: rgba(45, 49, 84, 0.4);
+    .image-wrapper {
+      padding-top: 40px;
+    }
+  }
+}
